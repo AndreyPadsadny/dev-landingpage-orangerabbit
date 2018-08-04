@@ -1,0 +1,255 @@
+
+@font-face {
+    font-family:'bebas';
+    font-weight: normal;
+    font-style: normal;
+    src:url('../fonts/bebas.woff') format('woff');
+}
+@font-face {
+  font-family: 'StMarie-Thin';
+  font-weight: lighter;
+  font-style: normal;
+  src: url('../fonts/StMarie-Thin') format('otf');
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  height: 100%;
+}
+
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.logo{
+  color: #fb9c06;
+  font-family: calibri;
+  background: url('../picture/rabbit-logo.png');
+  background-repeat: no-repeat;
+padding: 20px 0 20px 100px;
+
+    float: left;
+}
+.logo span{
+  display: block;
+  color: #6e6d6b;
+  font-family:"bebas", sans-serif;
+}
+.container {
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header{
+  /*position: fixed;*/
+  padding: 10px 0 20px;
+}
+.header nav {
+  float: right;
+  margin-top: 20px;
+}
+ul#menu{
+  list-style:none;
+  font-size: 0;
+}
+#menu li {
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 70px;
+}
+#menu li:last-child {
+  margin: 0;
+}
+#menu li a {
+  background:url(../picture/css_sprites.png) no-repeat;
+  display:inline-block;
+  padding-top: 60px;
+  min-width: 55px;
+  text-align: center;
+  color: #9e9b9b;
+  text-decoration: none;
+  font-family: Calibri;
+  font-size: 15px;
+
+}
+#menu li a:hover {
+  text-decoration: underline;
+}
+
+#menu li.home a {
+  background-position: -246px -6px;
+}
+#menu li.about a{
+  background-position: 6px -6px;
+}
+#menu li.work a{
+  background-position: -108px -2px;
+}
+#menu li.blog a{
+  background-position: -48px -1px;
+}
+#menu li.contact a{
+  background-position: -173px 2px;
+}
+
+.promo {
+  background: url('../picture/big-orange-bg.png');
+  height: 350px;
+  background-size: cover;
+  border: solid #fb9c06;
+  border-width: 2px 0;
+
+}
+.promo .container {
+  position: relative;
+}
+.promo .question {
+  font-family: 'bebas';
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 37px;
+  position: absolute;
+}
+
+.promo .question.rabbit {
+  background: rgba(76, 79, 79, .7);
+  color: #fb9c06;
+  top: 130px;
+}
+.promo .question.orange {
+  background: rgba(251, 156, 6, .7);
+  color:#4c4f4f;
+  top: 215px;
+  left: -5px;
+}
+.articles {
+  border-bottom: 2px solid #f5f5f5;
+  padding: 50px 0;
+}
+.article {
+  font-family: calibri;
+  font-weight: bold;
+  width: 25%;
+  float: left;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.article .readMore {
+  font-style: italic;
+  float: right;
+  color: #fb9c06;
+}
+.article .readMore::after {
+  content: '...';
+}
+
+.element {
+  padding: 50px 0;
+}
+.element > h2 {
+  text-align: center;
+  font-family: "StMarie-Thin", sans-serif;
+  font-weight:lighter;
+  text-decoration: underline;
+  font-size: 40px;
+  color: #fb9c06;
+  margin-bottom: 50px;
+}
+
+.team .teammate {
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: calibri;
+}
+
+.team .teammate .name {
+  font-size: 22px;
+  font-weight: normal;
+}
+.team .teammate .name span {
+  color: #fb9c06;
+}
+.team .teammate .avatar {
+  width: 300px;
+  height: 300px;
+  background: #ccc;
+  border: 4px solid #fb9c06;
+  border-radius: 50%;
+  margin: 25px 0;
+}
+.team .teammate  .description {
+  font-size: 15px;
+  padding: 10px 25px;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: left;
+  overflow:hidden;
+}
+.feedbackForm p label {
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+  color: #fb9c06;
+  font-size: 24px;
+}
+
+.feedbackForm p .formElement {
+  display: inline-block;
+  vertical-align: top;
+  width: 89%;
+  background: #f8f7f6;
+  border-color: #d2d0cf;
+  border-width: 1px 0 0 3px;
+  border-style: solid;
+  min-height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.feedbackForm p #feedbackMessage {
+  min-height: 80px;
+}
+.feedbackForm p {
+  margin-bottom: 20px;
+}
+.feedbackForm .submitBtn {
+  float: right;
+  color: #fff;
+  background: #fb9c06;
+  padding: 10px 20px;
+  transition: background .5s, color .5s;
+  border: 1px solid white;
+  margin-right: 40px;
+}
+.feedbackForm .submitBtn:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #fb9c06;
+  border-color: #fb9c06;
+}
+.footer {
+  position: absolute;
+  font-family: "StMarie-Thin", sans-serif;
+  font-weight:lighter;
+  text-align: center;
+  background: #fb9c06;
+  font-size: 33px;
+  padding: 20px 0 0 0 ;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+}
+.footer >p {
+  padding-top: 10px;
+}
